@@ -169,17 +169,11 @@ needs formating work
 
 * [self_care_checklist](lower_leg_circulation/tracking/self_care_checklist.html) 
 
-## Documentation {-}
+## Documentation and tools {-}
 
 * [change_log](lower_leg_circulation/documentation/change_log.html) 
 
 * [artifacts_download_guide](lower_leg_circulation/documentation/artifacts_download_guide.html) 
-
-
-
-<br/>
-
-## Tools {-}
 
 * [markdown_rendering_instructions](lower_leg_circulation/tools/markdown_rendering_instructions.html) 
 
