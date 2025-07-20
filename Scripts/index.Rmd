@@ -17,7 +17,7 @@ output:
     # this has no effect
     number_sections: yes
     # css: ['../_css/pandoc3.css', '../_css/myMargins.css']
-bibliography: [../_bibFiles/_healthy_aging.bib, ../../_bibFiles/_Breiman.bib, ../../_bibFiles/_Freedman.bib, ../../_bibFiles/_Yu.bib, ../../_bibFiles/_RUV.bib, ../../_bibFiles/_RMA.bib, ../../_bibFiles/_scRNAseq_norm.bib]
+#bibliography: [../_bibFiles/_healthy_aging.bib, ../../_bibFiles/_Breiman.bib, ../../_bibFiles/_Freedman.bib, ../../_bibFiles/_Yu.bib, ../../_bibFiles/_RUV.bib, ../../_bibFiles/_RMA.bib, ../../_bibFiles/_scRNAseq_norm.bib]
 csl: ../_csl/cell-numeric.csl
 link-citations: true
 ---
@@ -179,9 +179,17 @@ needs formating work
 * [markdown_rendering_instructions](lower_leg_circulation/tools/markdown_rendering_instructions.html) 
 
 
+<br/>
+
 # Finance: Car Finances
 
 * [tesla-guide](car_financing/reports/tesla-guide-html.html) -
+detailed buying guide comparing aquisition options for teslas
+
+* [car notes from your favorate fairy](https://docs.google.com/document/d/1-FTzoPrAMCw0uky_BrX817xjQEbgOx2K8kRgyMO2UC8/edit?tab=t.0)
+
+
+<br/>
 
 ```{r, echo=FALSE}
   knitr::knit_exit()
