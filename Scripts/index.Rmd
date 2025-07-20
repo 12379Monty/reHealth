@@ -164,7 +164,8 @@ discussed.
 
 ## Tracking {-}
 
-* [symptom_tracker](lower_leg_circulation/tracking/symptom_tracker.html) 
+* [symptom_tracker](lower_leg_circulation/tracking/symptom_tracker.html) -
+needs formating work
 
 * [self_care_checklist](lower_leg_circulation/tracking/self_care_checklist.html) 
 
