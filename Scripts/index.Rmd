@@ -151,19 +151,24 @@ PREFIX <- "index" #- replace by FLOWCELL???
 
 # Poor Lower Leg Circulation 
 
-<br/>
-
 ## Reports {-}
 
-* [lower_leg_circulation_report](lower_leg_circulation/reports/lower_leg_circulation_report.html) 
+* [lower_leg_circulation_report](lower_leg_circulation/reports/lower_leg_circulation_report.html) -
+makes the connection between symptoms and potential causal apathies
 
-* [vitamin_b12_report](lower_leg_circulation/reports/vitamin_b12_report.html) 
+* [vitamin_b12_report](lower_leg_circulation/reports/vitamin_b12_report.html)  -
+detailed report on the connection between vitamin B12 and the apathies being
+discussed.
+   - ways to supplement the natural supply of vitamin B12 are discussed
 
 
-<br/>
+## Tracking {-}
+
+* [symptom_tracker](lower_leg_circulation/tracking/symptom_tracker.html) 
+
+* [self_care_checklist](lower_leg_circulation/tracking/self_care_checklist.html) 
 
 ## Documentation {-}
-
 
 * [change_log](lower_leg_circulation/documentation/change_log.html) 
 
