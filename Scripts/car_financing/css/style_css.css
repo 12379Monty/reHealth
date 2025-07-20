@@ -1,0 +1,153 @@
+/* Style.css for Markdown Rendering */
+/* A clean, professional stylesheet for medical documentation */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #3498db;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #5d6d7e;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+code {
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Special classes for medical documentation */
+.important {
+    background-color: #fffacd;
+    border-left: 4px solid #ffd700;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.warning {
+    background-color: #ffe6e6;
+    border-left: 4px solid #ff4d4d;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.note {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+@media print {
+    body {
+        padding: 0;
+    }
+    
+    .no-print {
+        display: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    table, figure {
+        page-break-inside: avoid;
+    }
+}

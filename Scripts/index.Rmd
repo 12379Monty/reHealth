@@ -1,5 +1,5 @@
 ---
-title: "Health Issues Review"
+title: "Miscellanious Reports"
 ###\nLessons from 20 years of expererience"
 ### author: "[Francois Collin](https://www.linkedin.com/in/francoisz/)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -8,8 +8,8 @@ output:
   # for gtanse of .tabset
   bookdown::html_document2:
   #html_document:
-    code_folding: hide
-    code_download: true
+#   code_folding: hide
+#   code_download: false
     toc: true
     toc_depth: 3
     # does this have an effect
@@ -145,11 +145,12 @@ PREFIX <- "index" #- replace by FLOWCELL???
 
 # Preliminaries/Introduction {-}
 
-* We use `claude.ai` to compile information on current personal health conditions.
+* We use `claude.ai` to compile information on current personal health
+and other issues. 
 
 <br/>
 
-# Poor Lower Leg Circulation 
+# Health: Poor Lower Leg Circulation 
 
 ## Reports {-}
 
@@ -177,6 +178,10 @@ needs formating work
 
 * [markdown_rendering_instructions](lower_leg_circulation/tools/markdown_rendering_instructions.html) 
 
+
+# Finance: Car Finances
+
+* [tesla-guide](car_financing/reports/tesla-guide-html.html) -
 
 ```{r, echo=FALSE}
   knitr::knit_exit()
