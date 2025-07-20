@@ -1,0 +1,7 @@
+name: "reHealth"
+output_dir: "."
+navbar:
+  title: Personal Health Issues Review
+  left:
+    - text: "Home"
+      href: index.html
