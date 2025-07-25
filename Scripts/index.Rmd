@@ -187,8 +187,8 @@ needs formating work
 detailed buying guide comparing aquisition options for teslas
 
 * Divided into two parts:
-   -  [Part 1: Financial and Purchase Considerations](car_financing/reports/tesla-guide-part1-md.html) 
-   -  [Part 2: Model and Technical Comparisons](car_financing/reports/tesla-guide-part2-md.html) 
+   -  [Part 1: Financial and Purchase Considerations](car_financing/reports/tesla-guide-part1.html) 
+   -  [Part 2: Model and Technical Comparisons](car_financing/reports/tesla-guide-part2-fixed.html) 
 
 
 <br/>
