@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla Vehicle Acquisition Guide</title>
+    <title>Tesla Vehicle Acquisition Guide - Part 1</title>
     <style>
         /* Tesla Guide Styling - Similar to Claude Interface */
         :root {
@@ -156,6 +156,51 @@
           margin: 2rem 0;
         }
         
+        /* Table of Contents Styling */
+        .table-of-contents {
+            background-color: var(--background-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .table-of-contents h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: none;
+        }
+        
+        .table-of-contents ul {
+            margin-bottom: 0;
+        }
+        
+        .table-of-contents ul ul {
+            margin-top: 0.3rem;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: color 0.2s;
+        }
+        
+        .table-of-contents a:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        /* Section Linking */
+        h2:target, h3:target, h4:target {
+            animation: highlight 2s ease;
+        }
+        
+        @keyframes highlight {
+            from { background-color: #ffffd0; }
+            to { background-color: transparent; }
+        }
+
         /* Mobile responsiveness */
         @media (max-width: 768px) {
           body {
@@ -176,6 +221,10 @@
           
           table {
             font-size: 0.9rem;
+          }
+          
+          .table-of-contents {
+            padding: 1rem;
           }
         }
         
@@ -215,10 +264,11 @@
     </style>
 </head>
 <body>
-    <h1>Tesla Vehicle Acquisition Guide</h1>
+    <h1>Tesla Vehicle Acquisition Guide - Part 1</h1>
 
     <div class="table-of-contents">
-        <h2>Table of Contents</h2>
+        <h2>Complete Table of Contents</h2>
+        <h3>Part 1: Financial and Purchase Considerations</h3>
         <ul>
             <li><a href="#overview">Overview of Tesla Acquisition Options</a></li>
             <li><a href="#new-vs-used">New vs. Like-New Tesla Vehicles</a></li>
@@ -260,6 +310,28 @@
                     <li><a href="#financial-implications">Financial Implications to Discuss</a></li>
                     <li><a href="#exit-strategy">Exit Strategy for the Co-Signer</a></li>
                     <li><a href="#communication">Communication Framework</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Part 2: Model and Technical Comparisons</h3>
+        <ul>
+            <li>Tesla Model Comparison: Model S, Model 3, and Model Y
+                <ul>
+                    <li>Size and Capacity Comparison</li>
+                    <li>Performance and Range Comparison</li>
+                    <li>Price and Value Comparison</li>
+                    <li>Features and Technology Comparison</li>
+                    <li>Ideal Buyer Profiles</li>
+                    <li>Common Cross-Shopping Considerations</li>
+                </ul>
+            </li>
+            <li>All-Wheel Drive vs. Rear-Wheel Drive Comparison
+                <ul>
+                    <li>Key Benefits of All-Wheel Drive</li>
+                    <li>Key Benefits of Rear-Wheel Drive</li>
+                    <li>Drivetrain Recommendations by Climate</li>
+                    <li>Model-Specific Drivetrain Options</li>
+                    <li>Other Drivetrain Considerations</li>
                 </ul>
             </li>
         </ul>
@@ -1060,7 +1132,7 @@
     <li><strong>Decision-making authority</strong>: Who makes decisions about insurance changes, address updates, etc.</li>
     </ol>
     
-    <h3>Sample Approach Script</h3>
+    <h4>Sample Approach Script</h4>
     
     <p>When asking someone to co-sign, consider this framework:</p>
     
@@ -1072,7 +1144,7 @@
     
     <p>Would you be open to reviewing these details before making any decision?"</p>
     
-    <h3>Real-World Success Strategies</h3>
+    <h4>Real-World Success Strategies</h4>
     
     <p>These approaches have proven most successful:</p>
     
@@ -1084,5 +1156,7 @@
     <li><strong>Insurance protections</strong>: Comprehensive coverage with co-signer as additional insured</li>
     <li><strong>Professional documentation</strong>: Have an attorney review co-signer agreement for enforceability</li>
     </ol>
+    
+    <p><strong>See Part 2 for Model Comparisons and Drivetrain Analysis</strong></p>
 </body>
 </html>

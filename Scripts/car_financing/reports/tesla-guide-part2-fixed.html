@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Vehicle Acquisition Guide - Part 2</title>
+    <style>
+        /* Tesla Guide Styling - Similar to Claude Interface */
+        :root {
+          --text-primary: #1a1a1a;
+          --background-primary: #ffffff;
+          --background-secondary: #f9f9f9;
+          --accent-color: #5736df;
+          --border-color: #e5e5e5;
+          --code-background: #f5f5f5;
+          --table-header-bg: #f3f3f3;
+          --table-border: #e0e0e0;
+        }
+        
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          line-height: 1.6;
+          color: var(--text-primary);
+          background-color: var(--background-primary);
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2rem;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          font-weight: 600;
+          line-height: 1.25;
+        }
+        
+        h1 {
+          font-size: 2.25rem;
+          color: var(--accent-color);
+          border-bottom: 1px solid var(--border-color);
+          padding-bottom: 0.5rem;
+        }
+        
+        h2 {
+          font-size: 1.75rem;
+          margin-top: 2.5rem;
+          border-bottom: 1px solid var(--border-color);
+          padding-bottom: 0.3rem;
+        }
+        
+        h3 {
+          font-size: 1.4rem;
+          margin-top: 2rem;
+        }
+        
+        h4 {
+          font-size: 1.2rem;
+          margin-top: 1.5rem;
+        }
+        
+        p {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        
+        a {
+          color: var(--accent-color);
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: underline;
+        }
+        
+        strong {
+          font-weight: 600;
+        }
+        
+        /* Lists */
+        ul, ol {
+          padding-left: 2rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        
+        li {
+          margin-bottom: 0.5rem;
+        }
+        
+        /* Code blocks */
+        pre {
+          background-color: var(--code-background);
+          border-radius: 4px;
+          padding: 1rem;
+          overflow-x: auto;
+          margin: 1rem 0;
+        }
+        
+        code {
+          font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+          font-size: 0.9em;
+          background-color: var(--code-background);
+          padding: 0.2em 0.4em;
+          border-radius: 3px;
+        }
+        
+        pre code {
+          padding: 0;
+          background-color: transparent;
+        }
+        
+        /* Blockquotes */
+        blockquote {
+          border-left: 4px solid var(--accent-color);
+          margin: 1rem 0;
+          padding: 0.5rem 1rem;
+          background-color: var(--background-secondary);
+        }
+        
+        blockquote p {
+          margin: 0.5rem 0;
+        }
+        
+        /* Tables */
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          margin: 1.5rem 0;
+          overflow-x: auto;
+          display: block;
+        }
+        
+        table thead {
+          background-color: var(--table-header-bg);
+        }
+        
+        table th, table td {
+          padding: 0.75rem;
+          border: 1px solid var(--table-border);
+          text-align: left;
+        }
+        
+        table th {
+          font-weight: 600;
+        }
+        
+        table tr:nth-child(even) {
+          background-color: var(--background-secondary);
+        }
+        
+        /* Horizontal rule */
+        hr {
+          height: 1px;
+          background-color: var(--border-color);
+          border: none;
+          margin: 2rem 0;
+        }
+        
+        /* Table of Contents Styling */
+        .table-of-contents {
+            background-color: var(--background-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .table-of-contents h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: none;
+        }
+        
+        .table-of-contents ul {
+            margin-bottom: 0;
+        }
+        
+        .table-of-contents ul ul {
+            margin-top: 0.3rem;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: color 0.2s;
+        }
+        
+        .table-of-contents a:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        /* Section Linking */
+        h2:target, h3:target, h4:target {
+            animation: highlight 2s ease;
+        }
+        
+        @keyframes highlight {
+            from { background-color: #ffffd0; }
+            to { background-color: transparent; }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+          body {
+            padding: 1rem;
+          }
+          
+          h1 {
+            font-size: 1.75rem;
+          }
+          
+          h2 {
+            font-size: 1.5rem;
+          }
+          
+          h3 {
+            font-size: 1.25rem;
+          }
+          
+          table {
+            font-size: 0.9rem;
+          }
+          
+          .table-of-contents {
+            padding: 1rem;
+          }
+        }
+        
+        /* Print styles */
+        @media print {
+          body {
+            font-size: 12pt;
+            max-width: 100%;
+            padding: 0;
+            background-color: white;
+          }
+          
+          pre, code {
+            background-color: #f8f8f8 !important;
+            border: 1px solid #ddd;
+          }
+          
+          a {
+            color: #0366d6 !important;
+            text-decoration: underline;
+          }
+          
+          h1, h2, h3, h4, h5, h6 {
+            page-break-after: avoid;
+            page-break-inside: avoid;
+          }
+          
+          img, table {
+            page-break-inside: avoid;
+          }
+          
+          table {
+            display: table;
+            width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tesla Vehicle Acquisition Guide - Part 2</h1>
+
+    <div class="table-of-contents">
+        <h2>Complete Table of Contents</h2>
+        <h3>Part 1: Financial and Purchase Considerations</h3>
+        <ul>
+            <li>Overview of Tesla Acquisition Options</li>
+            <li>New vs. Like-New Tesla Vehicles</li>
+            <li>Buy vs. Lease Comparison</li>
+            <li>EV Tax Credit Implications</li>
+            <li>Tesla Direct vs. Third-Party Retailers</li>
+            <li>Financial Comparison: Buying vs. Leasing</li>
+            <li>Tesla Long-Term Value Retention Analysis</li>
+            <li>Key Financial Considerations</li>
+            <li>Used Tesla Financial Considerations</li>
+            <li>Comparative Analysis of Tesla Purchase Channels</li>
+            <li>Price Comparison Analysis</li>
+            <li>Special Considerations for Tesla Purchases</li>
+            <li>Strategic Recommendations Based on Buyer Profiles</li>
+            <li>Tesla Purchase Options for Buyers with Bad or No Credit</li>
+            <li>Guide to Tesla Co-Signer Arrangements</li>
+        </ul>
+        <h3>Part 2: Model and Technical Comparisons</h3>
+        <ul>
+            <li><a href="#model-comparison">Tesla Model Comparison: Model S, Model 3, and Model Y</a>
+                <ul>
+                    <li><a href="#size-capacity">Size and Capacity Comparison</a></li>
+                    <li><a href="#performance-range">Performance and Range Comparison</a></li>
+                    <li><a href="#price-value">Price and Value Comparison</a></li>
+                    <li><a href="#features-tech">Features and Technology Comparison</a></li>
+                    <li><a href="#ideal-buyers">Ideal Buyer Profiles</a></li>
+                    <li><a href="#cross-shopping">Common Cross-Shopping Considerations</a></li>
+                </ul>
+            </li>
+            <li><a href="#drivetrain-comparison">All-Wheel Drive vs. Rear-Wheel Drive Comparison</a>
+                <ul>
+                    <li><a href="#awd-benefits">Key Benefits of All-Wheel Drive</a></li>
+                    <li><a href="#rwd-benefits">Key Benefits of Rear-Wheel Drive</a></li>
+                    <li><a href="#climate-considerations">Drivetrain Recommendations by Climate</a></li>
+                    <li><a href="#model-specific-drivetrain">Model-Specific Drivetrain Options</a></li>
+                    <li><a href="#drivetrain-considerations">Other Drivetrain Considerations</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2 id="model-comparison">Tesla Model Comparison: Model S, Model 3, and Model Y</h2>
+    
+    <p>Understanding the key differences between Tesla's most popular models is essential for making an informed purchase decision. Each model offers distinct advantages depending on your needs, preferences, and budget.</p>
+    
+    <h3 id="size-capacity">Size and Capacity Comparison</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Model S</th>
+                <th>Model 3</th>
+                <th>Model Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vehicle Class</td>
+                <td>Full-size luxury sedan</td>
+                <td>Mid-size sedan</td>
+                <td>Compact SUV/crossover</td>
+            </tr>
+            <tr>
+                <td>Seating Capacity</td>
+                <td>5 adults</td>
+                <td>5 adults</td>
+                <td>5 adults (7 with optional 3rd row)</td>
+            </tr>
+            <tr>
+                <td>Cargo Space</td>
+                <td>28 cu ft (total)</td>
+                <td>23 cu ft (total)</td>
+                <td>76 cu ft (total)</td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                <td>197.7 inches</td>
+                <td>184.8 inches</td>
+                <td>187.0 inches</td>
+            </tr>
+            <tr>
+                <td>Ground Clearance</td>
+                <td>4.6 inches</td>
+                <td>5.5 inches</td>
+                <td>6.6 inches</td>
+            </tr>
+            <tr>
+                <td>Towing Capacity</td>
+                <td>Not rated for towing</td>
+                <td>Not rated for towing</td>
+                <td>Up to 3,500 lbs</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="performance-range">Performance and Range Comparison</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Model S</th>
+                <th>Model 3</th>
+                <th>Model Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Base Range (EPA est.)</td>
+                <td>405 miles</td>
+                <td>272 miles</td>
+                <td>330 miles</td>
+            </tr>
+            <tr>
+                <td>Base Acceleration (0-60)</td>
+                <td>3.1 seconds</td>
+                <td>5.8 seconds</td>
+                <td>5.0 seconds</td>
+            </tr>
+            <tr>
+                <td>Performance Model (0-60)</td>
+                <td>1.99 seconds (Plaid)</td>
+                <td>3.1 seconds</td>
+                <td>3.5 seconds</td>
+            </tr>
+            <tr>
+                <td>Top Speed</td>
+                <td>Up to 200 mph</td>
+                <td>Up to 162 mph</td>
+                <td>Up to 155 mph</td>
+            </tr>
+            <tr>
+                <td>Charging (Supercharger)</td>
+                <td>Up to 250 kW</td>
+                <td>Up to 250 kW</td>
+                <td>Up to 250 kW</td>
+            </tr>
+            <tr>
+                <td>Battery Size (approx.)</td>
+                <td>100 kWh</td>
+                <td>60-82 kWh</td>
+                <td>75-82 kWh</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="price-value">Price and Value Comparison (July 2025)</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Model S</th>
+                <th>Model 3</th>
+                <th>Model Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Price (New)</td>
+                <td>$89,990</td>
+                <td>$42,990</td>
+                <td>$49,990</td>
+            </tr>
+            <tr>
+                <td>Performance Version Price</td>
+                <td>$109,990 (Plaid)</td>
+                <td>$53,990</td>
+                <td>$57,990</td>
+            </tr>
+            <tr>
+                <td>Federal Tax Credit Eligible?</td>
+                <td>No (exceeds price cap)</td>
+                <td>Yes (up to $7,500)</td>
+                <td>Yes (up to $7,500)</td>
+            </tr>
+            <tr>
+                <td>2-Year Depreciation (approx.)</td>
+                <td>25-30%</td>
+                <td>18-23%</td>
+                <td>20-25%</td>
+            </tr>
+            <tr>
+                <td>5-Year Resale Value (% of original)</td>
+                <td>45-50%</td>
+                <td>52-58%</td>
+                <td>50-55%</td>
+            </tr>
+            <tr>
+                <td>Insurance Cost Comparison</td>
+                <td>Highest</td>
+                <td>Lowest</td>
+                <td>Medium</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="features-tech">Features and Technology Comparison</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Model S</th>
+                <th>Model 3</th>
+                <th>Model Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Main Display Size</td>
+                <td>17" horizontal</td>
+                <td>15" horizontal</td>
+                <td>15" horizontal</td>
+            </tr>
+            <tr>
+                <td>Instrument Cluster</td>
+                <td>Yes (digital)</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Steering Wheel</td>
+                <td>Yoke or Round option</td>
+                <td>Round</td>
+                <td>Round</td>
+            </tr>
+            <tr>
+                <td>Interior Quality</td>
+                <td>Premium (luxury-focused)</td>
+                <td>Standard (minimalist)</td>
+                <td>Standard (minimalist)</td>
+            </tr>
+            <tr>
+                <td>Hardware</td>
+                <td>Latest-gen computer</td>
+                <td>Latest-gen computer</td>
+                <td>Latest-gen computer</td>
+            </tr>
+            <tr>
+                <td>Sound System</td>
+                <td>22-speaker, 960 watts</td>
+                <td>8-15 speakers</td>
+                <td>14 speakers</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="ideal-buyers">Ideal Buyer Profiles</h3>
+    
+    <p><strong>Model S is ideal for:</strong></p>
+    <ul>
+    <li>Luxury-oriented buyers who prioritize premium materials and fit/finish</li>
+    <li>Performance enthusiasts seeking the fastest acceleration available</li>
+    <li>Executives who need a spacious, impressive vehicle with long range</li>
+    <li>Tech enthusiasts who want the most advanced features Tesla offers</li>
+    <li>Buyers less concerned with price-to-value ratio</li>
+    </ul>
+    
+    <p><strong>Model 3 is ideal for:</strong></p>
+    <ul>
+    <li>Value-conscious buyers seeking the most affordable Tesla option</li>
+    <li>Commuters who want excellent efficiency and lower operating costs</li>
+    <li>Urban dwellers who benefit from the smaller footprint and tight turning radius</li>
+    <li>First-time EV buyers entering the Tesla ecosystem</li>
+    <li>Buyers who prioritize handling and sporty driving dynamics</li>
+    </ul>
+    
+    <p><strong>Model Y is ideal for:</strong></p>
+    <ul>
+    <li>Families who need more cargo space and flexible seating</li>
+    <li>Active lifestyle customers who carry sports equipment or larger items</li>
+    <li>Those who want higher ride height and easier entry/exit</li>
+    <li>Buyers who occasionally need light towing capability</li>
+    <li>Customers who want a balance between utility and performance</li>
+    </ul>
+    
+    <h3 id="cross-shopping">Common Cross-Shopping Considerations</h3>
+    
+    <p><strong>Model 3 vs. Model Y Decision Factors:</strong></p>
+    <ul>
+    <li><strong>Price Sensitivity</strong>: Model 3 is approximately $7,000 less expensive</li>
+    <li><strong>Cargo Needs</strong>: Model Y offers 230% more cargo space</li>
+    <li><strong>Ride Height</strong>: Model Y sits about 1.1 inches higher</li>
+    <li><strong>Efficiency</strong>: Model 3 offers approximately 10% better efficiency/range per kWh</li>
+    <li><strong>Handling</strong>: Model 3 provides more agile handling due to lower center of gravity</li>
+    <li><strong>Family Use</strong>: Model Y offers more spacious rear seating and easier car seat installation</li>
+    </ul>
+    
+    <p><strong>Model S vs. Model 3 Decision Factors:</strong></p>
+    <ul>
+    <li><strong>Budget</strong>: Model 3 costs less than half the price of Model S</li>
+    <li><strong>Prestige</strong>: Model S offers more exclusive styling and premium interior</li>
+    <li><strong>Range Needs</strong>: Model S provides 30-40% greater range</li>
+    <li><strong>Performance</strong>: Model S Plaid offers substantially quicker acceleration</li>
+    <li><strong>Space</strong>: Model S provides more interior room, especially for rear passengers</li>
+    <li><strong>Tax Incentives</strong>: Only Model 3 qualifies for federal tax credits</li>
+    </ul>
+    
+    <p><strong>Model S vs. Model Y Decision Factors:</strong></p>
+    <ul>
+    <li><strong>Usage Pattern</strong>: Model Y prioritizes utility, Model S prioritizes luxury/performance</li>
+    <li><strong>Price</strong>: Model Y starts at approximately 45% less than Model S</li>
+    <li><strong>Flexibility</strong>: Model Y offers more versatile cargo configurations</li>
+    <li><strong>Driving Experience</strong>: Model S provides a more refined ride and quieter cabin</li>
+    <li><strong>Technology</strong>: Model S offers some premium tech features not available on Model Y</li>
+    <li><strong>Image</strong>: Model S projects executive luxury, while Model Y suggests practical premium</li>
+    </ul>
+    
+    <h2 id="drivetrain-comparison">All-Wheel Drive vs. Rear-Wheel Drive Comparison</h2>
+    
+    <p>Tesla offers both All-Wheel Drive (AWD) and Rear-Wheel Drive (RWD) configurations across its lineup. Understanding the differences can help you select the right drivetrain for your specific needs and conditions.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>All-Wheel Drive (Dual Motor)</th>
+                <th>Rear-Wheel Drive (Single Motor)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Model Availability</td>
+                <td>All Model S, Model X, Model Y, and higher trim Model 3s</td>
+                <td>Base Model 3 only</td>
+            </tr>
+            <tr>
+                <td>Price Premium</td>
+                <td>$4,000-$6,000 additional cost on Model 3</td>
+                <td>Base price (no premium)</td>
+            </tr>
+            <tr>
+                <td>Range Impact</td>
+                <td>Varies by model; often 10-20 miles less than equivalent RWD</td>
+                <td>Maximum efficiency/range for the platform</td>
+            </tr>
+            <tr>
+                <td>Performance (0-60)</td>
+                <td>Significantly faster (1-2 seconds quicker)</td>
+                <td>Still quick but less powerful</td>
+            </tr>
+            <tr>
+                <td>Traction in Snow/Rain</td>
+                <td>Superior stability and control</td>
+                <td>Adequate with traction control but less capable</td>
+            </tr>
+            <tr>
+                <td>Energy Consumption</td>
+                <td>5-10% higher kWh/mile</td>
+                <td>Most efficient option</td>
+            </tr>
+            <tr>
+                <td>Tire Wear</td>
+                <td>More even wear across all tires</td>
+                <td>Greater wear on rear tires</td>
+            </tr>
+            <tr>
+                <td>Maintenance</td>
+                <td>Additional motor adds slight complexity</td>
+                <td>Simpler design with fewer components</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="awd-benefits">Key Benefits of All-Wheel Drive (Dual Motor)</h3>
+    
+    <ul>
+    <li><strong>Superior Traction</strong>: Better performance in snow, ice, rain, and on loose surfaces</li>
+    <li><strong>Enhanced Acceleration</strong>: Faster 0-60 times and improved passing capability</li>
+    <li><strong>Increased Stability</strong>: More balanced weight distribution and handling</li>
+    <li><strong>Improved Regenerative Braking</strong>: Uses both motors to recapture energy</li>
+    <li><strong>Higher Resale Value</strong>: AWD models typically retain value better in most markets</li>
+    <li><strong>Redundancy</strong>: Can still operate if one motor has an issue (at reduced power)</li>
+    <li><strong>Better Hill Climbing</strong>: More capable on steep inclines and challenging terrain</li>
+    </ul>
+    
+    <h3 id="rwd-benefits">Key Benefits of Rear-Wheel Drive (Single Motor)</h3>
+    
+    <ul>
+    <li><strong>Lower Purchase Price</strong>: $4,000-$6,000 less expensive (Model 3)</li>
+    <li><strong>Better Efficiency</strong>: Typically 5-10% better range in ideal conditions</li>
+    <li><strong>Reduced Weight</strong>: Lighter vehicle with less complexity</li>
+    <li><strong>Lower Maintenance Costs</strong>: Fewer components to potentially repair</li>
+    <li><strong>Sporty Driving Dynamics</strong>: Classic rear-wheel drive feel appreciated by enthusiasts</li>
+    <li><strong>Sufficient for Most Conditions</strong>: Adequate for typical driving in moderate climates</li>
+    </ul>
+    
+    <h3 id="climate-considerations">Drivetrain Recommendations by Climate and Geography</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Climate/Geography</th>
+                <th>Recommended Drivetrain</th>
+                <th>Rationale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Snowy/Icy Regions</td>
+                <td>AWD Strongly Recommended</td>
+                <td>Significantly better traction and control in winter conditions</td>
+            </tr>
+            <tr>
+                <td>Rainy Climates</td>
+                <td>AWD Recommended</td>
+                <td>Better hydroplaning resistance and stability on wet roads</td>
+            </tr>
+            <tr>
+                <td>Hilly/Mountainous Areas</td>
+                <td>AWD Recommended</td>
+                <td>Better hill climbing ability and descent control</td>
+            </tr>
+            <tr>
+                <td>Dry, Flat Regions</td>
+                <td>RWD Sufficient</td>
+                <td>Cost savings with minimal performance compromise</td>
+            </tr>
+            <tr>
+                <td>Urban Use Only</td>
+                <td>RWD Sufficient</td>
+                <td>Maximum efficiency for city driving</td>
+            </tr>
+            <tr>
+                <td>Mixed/Variable Conditions</td>
+                <td>AWD Recommended</td>
+                <td>Better adaptability to changing conditions</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3 id="model-specific-drivetrain">Model-Specific Drivetrain Considerations</h3>
+    
+    <p><strong>Model 3 Drivetrain Options:</strong></p>
+    <ul>
+    <li><strong>Standard Range RWD</strong>: 272 miles range, 5.8s 0-60 mph, $42,990</li>
+    <li><strong>Long Range AWD</strong>: 341 miles range, 4.2s 0-60 mph, $48,990 (+$6,000)</li>
+    <li><strong>Performance AWD</strong>: 315 miles range, 3.1s 0-60 mph, $53,990 (+$11,000)</li>
+    </ul>
+    
+    <p><strong>Model Y Drivetrain Options:</strong></p>
+    <ul>
+    <li><strong>Long Range AWD</strong>: 330 miles range, 5.0s 0-60 mph, $49,990</li>
+    <li><strong>Performance AWD</strong>: 303 miles range, 3.5s 0-60 mph, $57,990 (+$8,000)</li>
+    <li><em>Note: No RWD option currently available for Model Y in 2025</em></li>
+    </ul>
+    
+    <p><strong>Model S Drivetrain Options:</strong></p>
+    <ul>
+    <li><strong>Dual Motor AWD</strong>: 405 miles range, 3.1s 0-60 mph, $89,990</li>
+    <li><strong>Plaid Tri-Motor AWD</strong>: 396 miles range, 1.99s 0-60 mph, $109,990 (+$20,000)</li>
+    <li><em>Note: No RWD option available for Model S</em></li>
+    </ul>
+    
+    <h3 id="drivetrain-considerations">Other Drivetrain Considerations</h3>
+    
+    <ul>
+    <li><strong>Insurance Costs</strong>: AWD versions typically cost 5-10% more to insure</li>
+    <li><strong>Tire Replacement</strong>: AWD models wear tires more evenly but may require replacing all four simultaneously</li>
+    <li><strong>Battery Impact</strong>: Dual motors can draw more power in aggressive driving, potentially affecting battery longevity</li>
+    <li><strong>Winter Tires</strong>: Still recommended for AWD models in severe winter conditions (AWD doesn't replace appropriate tires)</li>
+    <li><strong>Driving Style Impact</strong>: Aggressive drivers will see a larger efficiency gap between RWD and AWD</li>
+    </ul>
+    
+    <p><strong>Final Recommendation:</strong> For most buyers, the AWD option provides worthwhile benefits if you can accommodate the higher price. However, in mild climates with flat terrain, the RWD Model 3 offers excellent value and efficiency. Consider your local weather conditions, driving habits, and budget when making this choice.</p>
+    
+    <p><strong>See Part 1 for Financial and Purchase Considerations</strong></p>
+</body>
+</html>

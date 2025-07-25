@@ -1,4 +1,53 @@
-# Tesla Vehicle Acquisition Guide
+# Tesla Vehicle Acquisition Guide - Part 1
+
+## Complete Table of Contents
+
+### Part 1: Financial and Purchase Considerations
+- [Overview of Tesla Acquisition Options](#overview-of-tesla-acquisition-options)
+- [New vs. Like-New Tesla Vehicles](#new-vs-like-new-used-but-with-current-technology)
+- [Buy vs. Lease Comparison](#buy-vs-lease)
+- [EV Tax Credit Implications](#ev-tax-credit-implications)
+- [Tesla Direct vs. Third-Party Retailers](#tesla-direct-vs-carvanaother-retailers)
+- [Financial Comparison: Buying vs. Leasing](#financial-comparison-buying-vs-leasing)
+  - [Buying a Tesla (New)](#buying-a-tesla-new)
+  - [Leasing a Tesla (New)](#leasing-a-tesla-new)
+  - [5-Year Cost Comparison](#5-year-cost-comparison)
+- [Tesla Long-Term Value Retention Analysis](#tesla-long-term-value-retention-analysis)
+- [Key Financial Considerations](#key-financial-considerations)
+- [Used Tesla Financial Considerations](#used-tesla-financial-considerations)
+- [Comparative Analysis of Tesla Purchase Channels](#comparative-analysis-of-tesla-purchase-channels)
+  - [Direct from Tesla](#direct-from-tesla)
+  - [Third-Party Retailers](#third-party-retailers)
+- [Price Comparison Analysis](#price-comparison-analysis)
+- [Special Considerations for Tesla Purchases](#special-considerations-for-tesla-purchases)
+- [Strategic Recommendations Based on Buyer Profiles](#strategic-recommendations-based-on-buyer-profiles)
+- [Tesla Purchase Options for Buyers with Bad or No Credit](#tesla-purchase-options-for-buyers-with-bad-or-no-credit)
+  - [Credit Requirements by Channel](#credit-requirements-by-channel)
+  - [Strategic Recommendations for Credit-Challenged Buyers](#strategic-recommendations-for-credit-challenged-tesla-buyers)
+  - [Alternative Options Worth Considering](#alternative-options-worth-considering)
+- [Guide to Tesla Co-Signer Arrangements](#guide-to-tesla-co-signer-arrangements-for-credit-challenged-buyers)
+  - [Understanding Co-Signing](#understanding-co-signing-for-a-tesla-purchase)
+  - [Finding the Right Co-Signer](#finding-the-right-co-signer)
+  - [The Co-Signing Process by Purchase Channel](#the-co-signing-process-by-purchase-channel)
+  - [Legal Protections for Both Parties](#legal-protections-for-both-parties)
+  - [Financial Implications to Discuss](#financial-implications-to-discuss)
+  - [Exit Strategy for the Co-Signer](#exit-strategy-for-the-co-signer)
+  - [Communication Framework](#communication-framework)
+
+### Part 2: Model and Technical Comparisons
+- Tesla Model Comparison: Model S, Model 3, and Model Y
+  - Size and Capacity Comparison
+  - Performance and Range Comparison
+  - Price and Value Comparison
+  - Features and Technology Comparison
+  - Ideal Buyer Profiles
+  - Common Cross-Shopping Considerations
+- All-Wheel Drive vs. Rear-Wheel Drive Comparison
+  - Key Benefits of All-Wheel Drive
+  - Key Benefits of Rear-Wheel Drive
+  - Drivetrain Recommendations by Climate
+  - Model-Specific Drivetrain Options
+  - Other Drivetrain Considerations
 
 ## Overview of Tesla Acquisition Options
 
@@ -250,15 +299,18 @@ This used option often represents the best financial value, especially if you pl
 
 ## Price Comparison Analysis
 
-Based on current market data (July 2025), here's how pricing typically compares for a 2-year-old Tesla Model 3 Long Range across different channels:
+Based on current market data (July 2025), here's how pricing typically compares for a 2-year-old Tesla Model 3 across different channels:
 
 | Purchase Channel | Average Price | Relative Cost | Additional Fees |
 |------------------|---------------|---------------|-----------------|
-| Tesla Direct (New) | $52,990 | Baseline | $1,200 destination fee |
-| Tesla Used Inventory | $42,500 | -20% | Minimal processing fees |
-| Carvana/CarMax | $40,800 | -23% | $500-699 processing fee |
-| Traditional Dealership | $41,900 | -21% | $500-1,500 in dealer fees |
-| Private Seller | $38,500 | -27% | No additional fees |
+| Tesla Direct (New) | $42,990 | Baseline | $1,200 destination fee |
+| Tesla Direct (New) with Full Tax Credit | $35,490 | -17.4% | $1,200 destination fee |
+| Tesla Used Inventory | $34,900 | -19% | Minimal processing fees |
+| Carvana/CarMax | $34,500 | -20% | $500-699 processing fee |
+| Traditional Dealership | $35,200 | -18% | $500-1,500 in dealer fees |
+| Private Seller | $32,800 | -24% | No additional fees |
+
+*Note: The "Tesla Direct (New) with Full Tax Credit" option reflects the effective price after applying the $7,500 federal tax credit for eligible buyers who can utilize the full credit amount. Tax credit eligibility depends on personal tax liability and income limits.*
 
 ## Special Considerations for Tesla Purchases
 
@@ -585,7 +637,7 @@ Establish these communication protocols:
 4. **Documentation sharing**: Access to insurance, maintenance records
 5. **Decision-making authority**: Who makes decisions about insurance changes, address updates, etc.
 
-### Sample Approach Script
+#### Sample Approach Script
 
 When asking someone to co-sign, consider this framework:
 
@@ -597,7 +649,7 @@ I've prepared documents showing my income, current debts, and budget that demons
 
 Would you be open to reviewing these details before making any decision?"
 
-### Real-World Success Strategies
+#### Real-World Success Strategies
 
 These approaches have proven most successful:
 
@@ -607,3 +659,5 @@ These approaches have proven most successful:
 4. **Payment reporting tools**: Use services that report payments to credit bureaus to build credit faster
 5. **Insurance protections**: Comprehensive coverage with co-signer as additional insured
 6. **Professional documentation**: Have an attorney review co-signer agreement for enforceability
+
+**See Part 2 for Model Comparisons and Drivetrain Analysis**

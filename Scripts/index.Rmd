@@ -183,10 +183,12 @@ needs formating work
 
 # Finance: Car Finances
 
-* [tesla-guide](car_financing/reports/tesla-guide-html.html) -
+* [tesla-complete-guide](car_financing/reports/tesla-guide-complete-markdown.html) -
 detailed buying guide comparing aquisition options for teslas
 
-* [car notes from your favorate fairy](https://docs.google.com/document/d/1-FTzoPrAMCw0uky_BrX817xjQEbgOx2K8kRgyMO2UC8/edit?tab=t.0)
+* Divided into two parts:
+   -  [Part 1: Financial and Purchase Considerations](car_financing/reports/tesla-guide-part1-md.html) 
+   -  [Part 2: Model and Technical Comparisons](car_financing/reports/tesla-guide-part2-md.html) 
 
 
 <br/>
