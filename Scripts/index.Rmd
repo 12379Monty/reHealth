@@ -189,7 +189,7 @@ detailed buying guide comparing aquisition options for teslas
 * Divided into two parts:
    -  [Part 1: Financial and Purchase Considerations](car_financing/reports/tesla-guide-part1.html) 
    -  [Part 2: Model and Technical Comparisons](car_financing/reports/tesla-guide-part2-fixed.html) 
-      - [Corrected AWD vs RWD Comparison](car_financing/reports/tesla-comparison-html.html)
+      - [Corrected AWD vs RWD Comparison + 2025 vs 2022](car_financing/reports/tesla-comparison-updated-html.html)
 
 
 <br/>
