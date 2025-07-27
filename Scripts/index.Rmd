@@ -162,7 +162,8 @@ detailed report on the connection between vitamin B12 and the apathies being
 discussed.
    - ways to supplement the natural supply of vitamin B12 are discussed
 
-
+* [venous_insufficiency_treatment](lower_leg_circulation/reports/venous_insufficiency_treatment.html) -
+   -  treatments for venous insufficiency
 ## Tracking {-}
 
 * [symptom_tracker](lower_leg_circulation/tracking/symptom_tracker.html) -

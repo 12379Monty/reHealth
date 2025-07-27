@@ -8,19 +8,21 @@ This document provides a complete list of all artifacts in this project, with re
 |---|---------------|-----------|-------------|-------------------|
 | 1 | Lower Leg Circulation Report | Markdown | Main documentation of conditions, symptoms, and self-care | `lower_leg_circulation_report.md` |
 | 2 | Vitamin B12 and Its Role in Circulation-Related Nerve Symptoms | Markdown | Comprehensive information on B12 for circulation issues | `vitamin_b12_report.md` |
-| 3 | Style.css for Markdown Rendering | CSS | Styling for HTML rendering | `style.css` |
-| 4 | Lower Leg Circulation Report PDF Format | HTML | HTML version of main report for browser viewing/printing | `lower_leg_circulation_report.html` |
-| 5 | Symptom Tracker Companion | Markdown | Templates for tracking symptoms over time | `symptom_tracker.md` |
-| 6 | Simplified Self-Care Checklist | Markdown | Daily checklist for managing symptoms | `self_care_checklist.md` |
-| 7 | Markdown Rendering Instructions | Markdown | Guide for converting markdown to HTML | `markdown_rendering_instructions.md` |
-| 8 | Change Log | Markdown | Record of modifications to project | `change_log.md` |
-| 9 | Artifacts Download Guide | Markdown | This document | `artifacts_download_guide.md` |
+| 3 | Treatments for Venous Insufficiency and Related Neuropathy | Markdown | Treatment options, effectiveness, and management strategies | `venous_insufficiency_treatment.md` |
+| 4 | Style.css for Markdown Rendering | CSS | Styling for HTML rendering | `style.css` |
+| 5 | Lower Leg Circulation Report PDF Format | HTML | HTML version of main report for browser viewing/printing | `lower_leg_circulation_report.html` |
+| 6 | Symptom Tracker Companion | Markdown | Templates for tracking symptoms over time | `symptom_tracker.md` |
+| 7 | Simplified Self-Care Checklist | Markdown | Daily checklist for managing symptoms | `self_care_checklist.md` |
+| 8 | Markdown Rendering Instructions | Markdown | Guide for converting markdown to HTML | `markdown_rendering_instructions.md` |
+| 9 | Change Log | Markdown | Record of modifications to project | `change_log.md` |
+| 10 | Artifacts Download Guide | Markdown | This document | `artifacts_download_guide.md` |
 
 ## Recommended Download Order
 
 1. Start with the main reports:
    - Lower Leg Circulation Report
    - Vitamin B12 and Its Role in Circulation-Related Nerve Symptoms
+   - Treatments for Venous Insufficiency and Related Neuropathy
 
 2. Download the tools and supporting files:
    - Style.css for Markdown Rendering
@@ -45,6 +47,7 @@ lower_leg_circulation_project/
 ├── reports/
 │   ├── lower_leg_circulation_report.md
 │   ├── vitamin_b12_report.md
+│   ├── venous_insufficiency_treatment.md
 │   └── lower_leg_circulation_report.html
 │
 ├── tools/

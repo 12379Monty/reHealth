@@ -39,8 +39,15 @@
 - Added this Change Log to track modifications and additions to the project
 - Fixed artifact naming issue: recreated the Vitamin B12 report with proper ID "vitamin_b12_report"
 
-## Future Planned Updates
-- Potential integration of additional research on other vitamins and supplements
-- Expansion of dietary recommendations section
-- Development of exercise regimen specific to venous insufficiency
-- Creation of progress tracking tools for monitoring symptom improvements
+## Version 1.2.0 - July 20, 2025
+
+### Additions
+- Added navigation banner functionality:
+  - Updated CSS with navigation banner styling
+  - Created navigation banner HTML template
+  - Created project index file to serve as the home page
+  - Updated rendering instructions with commands to include the navigation banner
+
+### Updates
+- Enhanced markdown rendering instructions with options for different operating systems
+- Added simplified manual method for adding navigation banner
