@@ -1,11 +1,11 @@
 ---
 title: "Miscellanious Reports"
-###\nLessons from 20 years of expererience"
+###\nLessons from 20 years of experience"
 ### author: "[Francois Collin](https://www.linkedin.com/in/francoisz/)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 always_allow_html: yes
 output:
-  # for gtanse of .tabset
+  # for .tabset
   bookdown::html_document2:
   #html_document:
 #   code_folding: hide
@@ -150,39 +150,85 @@ and other issues.
 
 <br/>
 
-# Health: Poor Lower Leg Circulation 
+# Health: Poor Lower Leg Circulation {.tabset}
 
 ## Reports {-}
 
 * [lower_leg_circulation_report](lower_leg_circulation/reports/lower_leg_circulation_report.html) -
 makes the connection between symptoms and potential causal apathies
 
+
+<p><p/>
 * [vitamin_b12_report](lower_leg_circulation/reports/vitamin_b12_report.html)  -
 detailed report on the connection between vitamin B12 and the apathies being
 discussed.
    - ways to supplement the natural supply of vitamin B12 are discussed
 
+<p><p/>
 * [venous_insufficiency_treatment](lower_leg_circulation/reports/venous_insufficiency_treatment.html) -
    -  treatments for venous insufficiency
+
+<br/>
+
 ## Tracking {-}
 
+<p><p/>
 * [symptom_tracker](lower_leg_circulation/tracking/symptom_tracker.html) -
 needs formating work
 
 * [self_care_checklist](lower_leg_circulation/tracking/self_care_checklist.html) 
 
-## Documentation and tools {-}
+<br/>
 
-* [change_log](lower_leg_circulation/documentation/change_log.html) 
+## Images {- .tabset}
 
-* [artifacts_download_guide](lower_leg_circulation/documentation/artifacts_download_guide.html) 
+<!--
 
-* [markdown_rendering_instructions](lower_leg_circulation/tools/markdown_rendering_instructions.html) 
+ https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+
+- BANG[unchanged image](foo.jpg)
+
+- BANG[much-smaller image](foo.jpg){#id .class width=30 height=20px}
+
+- BANG[half-size image](foo.jpg){#id .class width=50% height=50%}
+
+The dimensions can be provided with no units (pixels assumed), 
+or with "px, cm, mm, in, inch and %" 
+
+ref: https://pandoc.org/MANUAL.html, search for link_attributes.
+
+-->
+
+
+### Lower legs/Feet {-}
+
+![Lower legs/Feet](lower_leg_circulation/img/20250804_012915_feeet.jpg){width=25% height=25%}
+
+<br/>
+
+### Left lower leg {-}
+
+![Lower left legx](lower_leg_circulation/img/20250804_012727_leftlLowerLeg.jpg){width=25% height=25%}
+
+<br/>
+
+### Left ankle {-}
+
+![Left ankle](lower_leg_circulation/img/20250804_012829_leftAnkle.jpg){width=25% height=25%}
 
 
 <br/>
 
-# Finance: Car Finances
+### Sore spots {-}
+
+![Sore spot](lower_leg_circulation/img/20250804_013142_soreSpots.jpg){width=25% height=25%}
+
+
+<br/>
+
+# Home  Economics
+
+##  Car Finances
 
 * [tesla-complete-guide](car_financing/reports/tesla-guide-complete-markdown.html) -
 detailed buying guide comparing aquisition options for teslas
@@ -194,6 +240,15 @@ detailed buying guide comparing aquisition options for teslas
 
 
 <br/>
+
+## The cost of collision insurance
+
+
+
+* The elements of an insurance claim are:
+   - P the premium, integrated over billing peruis if 6 noths
+   - C the cost of repair
+   - r = c(r_1, r_2, ...) the risk
 
 ```{r, echo=FALSE}
   knitr::knit_exit()
