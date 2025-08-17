@@ -1,0 +1,150 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5c6a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8a876;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000050"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">
+    Common Hernia Locations in Males
+  </text>
+  
+  <!-- Male torso outline -->
+  <path d="M300 80 Q320 70 340 75 L360 75 Q380 70 400 75 L420 75 Q440 70 460 75 L480 75 Q500 70 520 80 L540 90 Q550 100 545 120 L540 140 L535 160 L530 200 L525 240 L520 280 L515 320 L510 360 L505 400 L500 440 L495 480 Q490 500 485 510 L480 520 Q470 530 460 535 L440 540 L420 545 L400 550 L380 545 L360 540 L340 535 Q330 530 320 520 L315 510 Q310 500 305 480 L300 440 L295 400 L290 360 L285 320 L280 280 L275 240 L270 200 L265 160 L260 140 L255 120 Q250 100 260 90 Z" 
+        fill="url(#skinGrad)" 
+        stroke="#d4966a" 
+        stroke-width="2"
+        filter="url(#shadow)"/>
+  
+  <!-- Chest muscles outline -->
+  <ellipse cx="350" cy="150" rx="35" ry="25" fill="none" stroke="#c8956d" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="450" cy="150" rx="35" ry="25" fill="none" stroke="#c8956d" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Abdominal muscle lines -->
+  <line x1="400" y1="180" x2="400" y2="450" stroke="#c8956d" stroke-width="2" opacity="0.6"/>
+  <line x1="350" y1="200" x2="350" y2="420" stroke="#c8956d" stroke-width="1.5" opacity="0.5"/>
+  <line x1="450" y1="200" x2="450" y2="420" stroke="#c8956d" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Horizontal muscle divisions -->
+  <line x1="320" y1="220" x2="480" y2="220" stroke="#c8956d" stroke-width="1" opacity="0.4"/>
+  <line x1="325" y1="260" x2="475" y2="260" stroke="#c8956d" stroke-width="1" opacity="0.4"/>
+  <line x1="330" y1="300" x2="470" y2="300" stroke="#c8956d" stroke-width="1" opacity="0.4"/>
+  <line x1="335" y1="340" x2="465" y2="340" stroke="#c8956d" stroke-width="1" opacity="0.4"/>
+  <line x1="340" y1="380" x2="460" y2="380" stroke="#c8956d" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Umbilical area -->
+  <circle cx="400" cy="300" r="8" fill="#d4966a" stroke="#c8956d" stroke-width="2"/>
+  
+  <!-- 1. Epigastric Hernia -->
+  <circle cx="400" cy="240" r="12" fill="#e74c3c" stroke="#c0392b" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">1</text>
+  
+  <!-- 2. Umbilical Hernia -->
+  <circle cx="400" cy="300" r="15" fill="#e67e22" stroke="#d35400" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">2</text>
+  
+  <!-- 3. Incisional Hernia (vertical scar) -->
+  <rect x="395" y="320" width="10" height="60" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" opacity="0.8" rx="2"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">3</text>
+  
+  <!-- 4. Right Inguinal Hernia -->
+  <ellipse cx="440" cy="440" rx="18" ry="12" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.8"/>
+  <text x="440" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">4R</text>
+  
+  <!-- 5. Left Inguinal Hernia -->
+  <ellipse cx="360" cy="440" rx="18" ry="12" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.8"/>
+  <text x="360" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">4L</text>
+  
+  <!-- 6. Femoral Hernia (less common) -->
+  <circle cx="425" cy="465" r="8" fill="#e91e63" stroke="#c2185b" stroke-width="2" opacity="0.8"/>
+  <text x="425" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">5</text>
+  
+  <!-- Hiatal Hernia (internal, shown with arrow) -->
+  <circle cx="400" cy="120" r="10" fill="#16a085" stroke="#138d75" stroke-width="2" opacity="0.8"/>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">6</text>
+  <path d="M400 135 Q405 145 400 155" fill="none" stroke="#16a085" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a085"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g transform="translate(550, 120)">
+    <rect x="0" y="0" width="240" height="420" fill="white" stroke="#bdc3c7" stroke-width="2" rx="5" filter="url(#shadow)"/>
+    <text x="120" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Hernia Types & Statistics</text>
+    
+    <!-- Legend items -->
+    <g transform="translate(15, 50)">
+      <circle cx="10" cy="10" r="8" fill="#e74c3c"/>
+      <text x="25" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">1. Epigastric</text>
+      <text x="25" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">~4% of all hernias</text>
+      <text x="25" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Males: ~2-3% lifetime</text>
+    </g>
+    
+    <g transform="translate(15, 90)">
+      <circle cx="10" cy="10" r="8" fill="#e67e22"/>
+      <text x="25" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">2. Umbilical</text>
+      <text x="25" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">6-14% of all hernias</text>
+      <text x="25" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Males: ~5-8% lifetime</text>
+    </g>
+    
+    <g transform="translate(15, 130)">
+      <rect x="5" y="5" width="10" height="15" fill="#9b59b6" rx="1"/>
+      <text x="25" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">3. Incisional</text>
+      <text x="25" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">10-30% after surgery</text>
+      <text x="25" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Males: Variable risk</text>
+    </g>
+    
+    <g transform="translate(15, 170)">
+      <ellipse cx="12" cy="10" rx="12" ry="8" fill="#3498db"/>
+      <text x="30" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">4. Inguinal (L/R)</text>
+      <text x="30" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">75% of all hernias</text>
+      <text x="30" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Males: 27% lifetime</text>
+      <text x="30" y="52" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">MOST COMMON</text>
+    </g>
+    
+    <g transform="translate(15, 230)">
+      <circle cx="10" cy="10" r="6" fill="#e91e63"/>
+      <text x="25" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">5. Femoral</text>
+      <text x="25" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">~1% of all hernias</text>
+      <text x="25" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">Males: <1% lifetime</text>
+    </g>
+    
+    <g transform="translate(15, 270)">
+      <circle cx="10" cy="10" r="8" fill="#16a085"/>
+      <text x="25" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">6. Hiatal</text>
+      <text x="25" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">20% overall population</text>
+      <text x="25" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">50% over age 50</text>
+    </g>
+    
+    <!-- Multiple Hernia Statistics -->
+    <line x1="10" y1="310" x2="220" y2="310" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="120" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Multiple Hernia Risk</text>
+    
+    <g transform="translate(15, 340)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">After Inguinal Hernia:</text>
+      <text x="0" y="28" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">• Bilateral: 15-20%</text>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">• Umbilical: +8-12%</text>
+      <text x="0" y="52" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">• Incisional: Variable</text>
+      
+      <text x="0" y="75" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">Post-AWR Complex:</text>
+      <text x="0" y="88" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">• Any hernia: 25-35%</text>
+    </g>
+  </g>
+  
+  <!-- Risk indicators -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">
+    Note: Statistics represent lifetime risk estimates for males. Individual risk varies based on age, genetics, occupation, and medical history.
+  </text>
+</svg>

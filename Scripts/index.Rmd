@@ -226,6 +226,17 @@ ref: https://pandoc.org/MANUAL.html, search for link_attributes.
 
 <br/>
 
+
+# Health:  male hernias {-}
+
+## Reports {-}
+
+* [hernia_report](hernias/reports/hernia_report_html.html) -
+gives a summary of incidence and coincidence rates of make hernias
+
+
+<br/>
+
 # Home  Economics
 
 ##  Car Finances
