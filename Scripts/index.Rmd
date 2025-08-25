@@ -10,7 +10,7 @@ output:
   #html_document:
 #   code_folding: hide
 #   code_download: false
-    toc: true
+    toc: false
     toc_depth: 3
     # does this have an effect
     fig_caption: yes
@@ -143,14 +143,13 @@ PREFIX <- "index" #- replace by FLOWCELL???
 -->
 
 
-# Preliminaries/Introduction {-}
 
-* We use `claude.ai` to compile information on current personal health
+I use `claude.ai` to compile information on current personal health
 and other issues. 
 
 <br/>
 
-# Health: Poor Lower Leg Circulation {.tabset}
+# Health: Poor Lower Leg Circulation {.tabset -}
 
 ## Reports {-}
 
@@ -229,13 +228,23 @@ ref: https://pandoc.org/MANUAL.html, search for link_attributes.
 
 # Health:  male hernias {-}
 
+<!--
 ## Reports {-}
+-->
 
 * [hernia_report](hernias/reports/hernia_report_html.html) -
 gives a summary of incidence and coincidence rates of make hernias
 
 
 <br/>
+
+```{r, echo=FALSE}
+  knitr::knit_exit()
+```
+
+##########################################
+# ARCHIVAL
+##########################################
 
 # Home  Economics
 
@@ -260,9 +269,5 @@ detailed buying guide comparing aquisition options for teslas
    - P the premium, integrated over billing peruis if 6 noths
    - C the cost of repair
    - r = c(r_1, r_2, ...) the risk
-
-```{r, echo=FALSE}
-  knitr::knit_exit()
-```
 
 
