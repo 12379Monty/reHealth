@@ -181,6 +181,8 @@ needs formating work
 
 ## Images {- .tabset}
 
+### Home {-}
+
 <!--
 
  https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
