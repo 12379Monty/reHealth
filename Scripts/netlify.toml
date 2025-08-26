@@ -1,0 +1,3 @@
+[build]
+  command = "echo 'No build steps needed, publishing static files.'"
+  publish = "public" # Or your designated publish directory
