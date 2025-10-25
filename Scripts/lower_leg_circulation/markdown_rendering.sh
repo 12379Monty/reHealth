@@ -76,6 +76,20 @@ Rscript -e   \
     output_file='$md_file.html',
     params=list(css='$css_file'))" > $md_file_path.log
 
+ #########################################
+md_folder=reports
+md_file=swim_report
+md_file_path=$md_folder/$md_file
+
+echo  ''
+echo  ''
+echo md_file_path = $md_file_path
+Rscript -e   \
+   "rmarkdown::render('$md_file_path.md',
+    output_format = rmarkdown::html_document(),
+    output_file='$md_file.html',
+    params=list(css='$css_file'))" > $md_file_path.log
+
  
  #########################################
 md_folder=tools
