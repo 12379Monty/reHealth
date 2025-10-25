@@ -1,4 +1,4 @@
- Good clarification! Let me search for information specifically about venous insufficiency associated with non-injection cocaine use (snorting or smoking).Let me search more specifically for cocaine's systemic vascular effects that might relate to venous insufficiency regardless of route of administration.Based on my search, here's what is known about the association between venous insufficiency and chronic cocaine use through non-injection routes (snorting or smoking):
+ Let me search for information specifically about venous insufficiency associated with non-injection cocaine use (snorting or smoking).Let me search more specifically for cocaine's systemic vascular effects that might relate to venous insufficiency regardless of route of administration.Based on my search, here's what is known about the association between venous insufficiency and chronic cocaine use through non-injection routes (snorting or smoking):
 
 ## The Current State of Knowledge
 
@@ -22,7 +22,7 @@ There are documented cases of venous thromboembolism (VTE) in cocaine users, tho
 
 ## Bottom Line
 
-While chronic cocaine use—regardless of route—appears to create a systemic prothrombotic state with endothelial dysfunction that *could* theoretically contribute to chronic venous insufficiency, there is a striking lack of specific research on venous insufficiency in non-injection cocaine users. The vast majority of documented venous insufficiency cases are in people who inject drugs, where direct mechanical vein damage is the primary mechanism. More research is needed to determine if chronic snorting or smoking of cocaine independently increases risk for chronic venous insufficiency through systemic vascular effects alone.
+While chronic cocaine use—regardless of route—appears to create a systemic prothrombotic state with endothelial dysfunction that *could* theoretically contribute to chronic venous insufficiency, **there is a striking lack of specific research on venous insufficiency in non-injection cocaine users**. The vast majority of documented venous insufficiency cases are in people who inject drugs, where direct mechanical vein damage is the primary mechanism. More research is needed to determine if chronic snorting or smoking of cocaine independently increases risk for chronic venous insufficiency through systemic vascular effects alone.
 
 
 

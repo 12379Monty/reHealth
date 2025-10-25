@@ -155,7 +155,7 @@ and other issues.
 
 * [lower_leg_circulation_report](lower_leg_circulation/reports/lower_leg_circulation_report.html) -
 makes the connection between symptoms and potential causal apathies
-   - [swim-report](lower_leg_circulation/reports/swim-report.html)
+   - [swim_report](lower_leg_circulation/reports/swim_report.html)
 
 
 <p><p/>
